@@ -154,6 +154,7 @@ header{
         filter:drop-shadow(-1vw 2vw 15px #b61601);
     }
     .row-1{
+
         position: relative;
         width: 100%;
         height:29vw;
@@ -170,6 +171,7 @@ header{
                 width:50%;
             }
            .info{
+               overflow: hidden;
                position: relative;
                margin-left: 50px;
             
@@ -180,6 +182,7 @@ header{
                 letter-spacing: 5px;
             }
             p{
+                width: 20vw;
                 font-size:1vw;
                 line-height: 2;
             }
@@ -212,6 +215,7 @@ header{
                 p{
                     font-size:1vw;
                     line-height: 2;
+                    width:20vw;
                 }
             }
 
