@@ -6,7 +6,7 @@ body {
 }
 
 * {
-  user-select: none;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -85,7 +85,7 @@ header .info button {
   color: #000;
   font-family: "Montserrat", sans-serif;
   width: 220px;
-  box-shadow: 5px 4px 8px #ffb235;
+  box-shadow: 2px 2px 8px #ffb235;
   text-transform: uppercase;
   letter-spacing: 4px;
   height: 50px;
@@ -129,25 +129,28 @@ header nav .sub a:hover {
   color: #f9593a;
 }
 
+.blur, .blur-2 {
+  position: absolute;
+  width: 120%;
+  margin-left: -10%;
+  height: 48vw;
+  bottom: -80vw;
+  filter: blur(40px);
+  background-color: #f9593a;
+  z-index: 999;
+}
+
+.blur-2 {
+  height: 55vw;
+}
+
 .features {
+  overflow: hidden;
   font-family: "Montserrat", sans-serif;
   padding-top: 5%;
   width: 100%;
   background-color: #f9593a;
   position: relative;
-}
-.features .arrow, .features .arrow-2 {
-  filter: none;
-  width: 2%;
-  position: absolute;
-  top: 27vw;
-  right: 4vw;
-  transform: translate(-50%);
-  cursor: pointer;
-}
-.features .arrow-2 {
-  left: 4vw;
-  transform: rotate(180deg);
 }
 .features img {
   filter: drop-shadow(-1vw 2vw 15px #b61601);
@@ -297,7 +300,200 @@ header nav .sub a:hover {
   flex: 1;
   overflow: hidden;
 }
+.catalog-list {
+  width: 100%;
+  display: -webkit-flex;
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+}
+.catalog-list .main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.catalog-list .main .box {
+  height: 100%;
+  flex: 1;
+  background: url("../images/radio.png");
+  background-position: left bottom;
+  background-size: cover;
+}
+.catalog-list .main .box .info {
+  margin: 5vw;
+  float: left;
+  height: 27vw;
+  position: relative;
+}
+.catalog-list .main .box .info span {
+  display: block;
+}
+.catalog-list .main .box .info span:first-child {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.catalog-list .main .box .info span:nth-child(2) {
+  text-transform: capitalize;
+  font-size: 3vw;
+  color: #292929;
+  margin-bottom: 2vw;
+}
+.catalog-list .main .box .info p {
+  font-family: "Montserrat";
+  max-width: 290px;
+  font-size: 1vw;
+}
+.catalog-list .main .box .info a:hover {
+  color: #fff;
+  background-color: #000;
+}
+.catalog-list .main .items {
+  flex: 1;
+}
+.catalog-list .main .items .header {
+  width: 100%;
+  height: 50%;
+  background-image: url("../images/Tv.png");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.catalog-list .main .items .header h1 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.catalog-list .main .items .header a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: bolder;
+  font-size: 1vw;
+  border: 1px solid #fff;
+  padding: 10px 40px;
+  border-radius: 2em;
+  transition: all ease 500ms;
+}
+.catalog-list .main .items .header a:hover {
+  color: #000;
+  background: #fff;
+}
+.catalog-list .main .items .bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.catalog-list .main .items .bottom img {
+  filter: drop-shadow(-1vw 1vw 15px #000);
+}
+.catalog-list .main .items .bottom .pic-box {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  padding-top: 5%;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+  background-color: #fddc1e;
+}
+.catalog-list .main .items .bottom .pic-box img {
+  width: 50%;
+}
+.catalog-list .main .items .bottom .pic-box span {
+  font-size: 2vw;
+  font-family: "Montserrat";
+  color: #fff;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 1.2vw;
+}
+.catalog-list .main .items .bottom .bt-box::before {
+  content: "\a";
+  border-style: solid;
+  border-width: 3vw 3vw 3vw 0;
+  border-color: transparent #fff transparent transparent;
+  position: absolute;
+  left: -2vw;
+}
+.catalog-list .main .items .bottom .bt-box {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.catalog-list .main .items .bottom .bt-box span {
+  font-size: 2.7vw;
+  color: #292929;
+}
+.catalog-list .main .items .bottom .bt-box a {
+  margin: 25px 0;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  text-decoration: none;
+  color: #292929;
+  font-weight: bolder;
+  font-size: 1vw;
+  border: 2px solid #fddc1e;
+  padding: 10px 40px;
+  border-radius: 2em;
+  transition: all ease 500ms;
+}
+.catalog-list .main .items .bottom .bt-box a:hover {
+  background-color: #fddc1e;
+  color: #fff;
+}
+
+.catalog-list .main .box .info a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Montserrat";
+  position: absolute;
+  bottom: 0;
+  font-weight: bolder;
+  font-size: 1vw;
+  border: 1px solid #000;
+  padding: 10px 40px;
+  border-radius: 2em;
+  transition: all ease 500ms;
+}
+
 @media screen and (max-width: 756px) {
+  .header .blur, .header .blur-2 {
+    height: 190vw;
+    bottom: -290vw;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+  .main .items .header {
+    height: 100% !important;
+  }
+  .main .items .header a {
+    font-size: 2vw !important;
+  }
+  .main .items .bottom a {
+    font-size: 1.5vw !important;
+  }
+  .main .items .bottom span {
+    font-size: 3vw !important;
+  }
+  .main .box .info p {
+    font-size: 17px !important;
+  }
+  .main a {
+    font-size: 1.5vw !important;
+  }
+
   img {
     filter: drop-shadow(-1vw 2vw 15px #b61601);
   }
@@ -307,6 +503,7 @@ header nav .sub a:hover {
   }
 
   .mobile_section {
+    height: 270vh;
     text-align: center;
     width: 100%;
     background-color: #f9593a;

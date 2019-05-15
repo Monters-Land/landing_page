@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
     <title>Modern</title>
 </head>
 
@@ -27,50 +31,52 @@
             <button>Download it </button>
         </section>
         <h1 class="text">Land<span>ing</span></h1>
-        <img class="scroll" src="images/Scroll.svg" alt="" srcset="">
+        <a href="#features"><img class="scroll" src="images/Scroll.svg" alt="" srcset=""></a>
         <img class="ms" src="images/Img.png" alt="">
+        <div class="blur"></div>
     </header>
-    <section class="features">
-        <div class="container">
-            <div class="row-1">
-                <div class="item1">
-                    <img src="images/cloud.png" alt="cloud-image">
-                    <div class="info">
-                        <span>Cloud Balloon</span>
-                        <p>The Crucial Mx200 SSD has a great solid-state drive thanks to its helpful features and high
-                            endurance.</p>
+    <section id="features" class="features">
+        <div class=" container">
+                    <div class="row-1">
+                    <div class="item1">
+                        <img src="images/cloud.png" alt="cloud-image">
+                        <div class="info">
+                            <span>Cloud Balloon</span>
+                            <p>The Crucial Mx200 SSD has a great solid-state drive thanks to its helpful features and high
+                                endurance.</p>
+                        </div>
+                    </div>
+                    <div class="item2">
+                        <img src="images/music.png" alt="cloud-image">
+                        <div class="info">
+                            <span>Note Balloon</span>
+                            <p>Even before you pop the AKG K3003i intto your ears you know something’s up. The beautifully
+                                finished metal earpieces look </p>
+                        </div>
+    
                     </div>
                 </div>
-                <div class="item2">
-                    <img src="images/music.png" alt="cloud-image">
-                    <div class="info">
-                        <span>Note Balloon</span>
-                        <p>Even before you pop the AKG K3003i intto your ears you know something’s up. The beautifully
-                            finished metal earpieces look </p>
+                <span class="center-text">Features</span>
+                <div class="row-2">
+                    <div class="item3">
+                        <img src="images/Axe.png" alt="cloud-image">
+                        <div class="info">
+                            <span>Axe Balloon</span>
+                            <p>No spec - no matter how appealing - should ever be vtiewed in a vacuum, and the decision to actually commit</p>
+                        </div>
                     </div>
-
-                </div>
-            </div>
-            <span class="center-text">Features</span>
-            <img class="arrow" src="images/right-arrow.svg" alt="" srcset="">
-            <img class="arrow-2" src="images/right-arrow.svg" alt="" srcset="">
-            <div class="row-2">
-                <div class="item3">
-                    <img src="images/Axe.png" alt="cloud-image">
-                    <div class="info">
-                        <span>Axe Balloon</span>
-                        <p>No spec - no matter how appealing - should ever be vtiewed in a vacuum, and the decision to actually commit</p>
-                    </div>
-                </div>
-                <div class="item4">
-                    <img src="images/Rocket.png" alt="cloud-image">
-                    <div class="info">
-                        <span>Rocket</span>
-                        <p>No matter how good you are at typing on your iPad’s own touchscreen, there’s no getting around the fact that you’re</p>
+                    <div class="item4">
+                        <img src="images/Rocket.png" alt="cloud-image">
+                        <div class="info">
+                            <span>Rocket</span>
+                            <p>No matter how good you are at typing on your iPad’s own touchscreen, there’s no getting around the fact that you’re</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="blur-2"></div>
+
     </section>
     <section class="mobile_section">
         <span class="ft-text">features</span>
@@ -105,52 +111,37 @@
                 </div>
             </div>
     </section>
-    <!-- <section class="team_section">
-        <div class="row">
-            <div class="image">
-                <img src="https://images.unsplash.com/photo-1550581419-7f8a2d750765?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
-            </div>
-            <div class="about">
-                <div class="name"><span>Laura Geller</span>
-                    </div>
-                <div class="skill"><span>Designer</span></div>
-                <div class="info"><p>Data Centers have gained importance with hyper connectivity. To handle</p></div>
-                <div class="contact"><span><i  class="far fa-envelope"></i> Info@landing.ui</span></div>
-            </div>
-            <div class="image">
-                <img src="https://images.unsplash.com/photo-1482264851290-446b18e3ee9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
-            </div>
-            <div class="about">
-                    <div class="name"><span>Bernard Brewer</span>
-                    </div>
-                <div class="skill"><span>Designer</span></div>
-                <div class="info"><p>When the aim is to develop an entertaining and fun game app, it is essential for </p></div>
-                <div class="contact"><span><i  class="far fa-envelope"></i> Info@landing.ui</span></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="image">
-                <img src="https://images.unsplash.com/photo-1550581419-7f8a2d750765?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
-            </div>
-            <div class="about">
-                <div class="name"><span>Laura Geller</span>
-                    </div>
-                <div class="skill"><span>Designer</span></div>
-                <div class="info"><p>Data Centers have gained importance with hyper connectivity. To handle</p></div>
-                <div class="contact"><span><i  class="far fa-envelope"></i> Info@landing.ui</span></div>
-            </div>
-            <div class="image">
-                <img src="https://images.unsplash.com/photo-1482264851290-446b18e3ee9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
-            </div>
-            <div class="about">
-                    <div class="name"><span>Bernard Brewer</span>
-                    </div>
-                <div class="skill"><span>Designer</span></div>
-                <div class="info"><p>When the aim is to develop an entertaining and fun game app, it is essential for </p></div>
-                <div class="contact"><span><i  class="far fa-envelope"></i> Info@landing.ui</span></div>
-            </div>
-        </div> -->
+    <section class="catalog-list">
+        <div class="main">
+            <div class="box">
+                <div class="info">
+                    <span>New arrivals</span>
+                    <span>The Point</span>
+                    <p>
+                            Although some scientific research is applied research into specific problems, a great deal of our understanding comes from the curiosity-driven undertakin
+                    </p>
+                    <a class="btn" href="#">BUY NOW</a>
+                </div>
 
+            </div>
+            <div class="items">
+                    <div class="header">
+                        <h1>High quality Speakers</h1>
+                        <a href="#">BUY NOW</a>
+                    </div>
+                    <div class="bottom">
+                        <div class="pic-box">
+                            <img src="images/obj.png" alt="">
+                            <span>$399</span>
+                        </div>
+                        <div class="bt-box">
+                            <span>Watch,<br/>Watch!</span>
+                            <a href="#">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+            
     </section>
     <script src="js/script.js"></script>
 </body>
