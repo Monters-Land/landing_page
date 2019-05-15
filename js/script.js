@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded' , ()=>{
     let timeline = new TimelineMax();
     timeline
     .to('.blur' , 6 , {
-        top:'0%' 
+        top:'40%' 
     })
     let scene = new ScrollMagic.Scene({
         triggerElement:'header',
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded' , ()=>{
     let timeline2 = new TimelineMax();
     timeline2
     .to(' .features .blur-2' , 6 , {
-        top:'0%' 
+        top:'40%' 
     })
 
     let scene_2 = new ScrollMagic.Scene({

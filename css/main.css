@@ -133,7 +133,7 @@ header nav .sub a:hover {
   position: absolute;
   width: 120%;
   margin-left: -10%;
-  height: 48vw;
+  height: 50vw;
   bottom: -80vw;
   filter: blur(40px);
   background-color: #f9593a;
@@ -355,7 +355,7 @@ header nav .sub a:hover {
   width: 100%;
   height: 50%;
   background-image: url("../images/Tv.png");
-  background-position: bottom;
+  background-position: bottom right;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -389,9 +389,6 @@ header nav .sub a:hover {
   height: 50%;
   display: flex;
 }
-.catalog-list .main .items .bottom img {
-  filter: drop-shadow(-1vw 1vw 15px #000);
-}
 .catalog-list .main .items .bottom .pic-box {
   position: relative;
   width: 50%;
@@ -403,6 +400,9 @@ header nav .sub a:hover {
   background-color: #fddc1e;
 }
 .catalog-list .main .items .bottom .pic-box img {
+  position: absolute;
+  top: 20%;
+  transform: translate(-50%);
   width: 50%;
 }
 .catalog-list .main .items .bottom .pic-box span {
@@ -411,7 +411,8 @@ header nav .sub a:hover {
   color: #fff;
   font-weight: bolder;
   position: absolute;
-  bottom: 1.2vw;
+  bottom: 1vw;
+  right: 1vw;
 }
 .catalog-list .main .items .bottom .bt-box::before {
   content: "\a";

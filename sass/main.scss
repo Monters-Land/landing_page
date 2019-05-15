@@ -132,7 +132,7 @@ header{
     position: absolute;
     width: 120%;
     margin-left: -10%;
-    height: 48vw;
+    height: 50vw;
     bottom: -80vw;
     filter: blur(40px);
     background-color: #f9593a;
@@ -372,7 +372,7 @@ header{
                 width:100%;
                 height:50%;
                 background-image: url('../images/Tv.png');
-                background-position: bottom;
+                background-position: bottom right;
                 background-size: cover;
                 display:flex;
                 flex-direction: column;
@@ -402,10 +402,6 @@ header{
                 }
             }
             .bottom{
-                img{
-
-                    filter:drop-shadow(-1vw 1vw 15px #000);
-                }
                 width:100%;
                 height:50%; 
                 display:flex;
@@ -419,6 +415,9 @@ header{
                     height:100%;
                     background-color:#fddc1e;
                     img{
+                        position: absolute;
+                        top:20%;
+                        transform: translate(-50%);
                         width:50%;
                     }
                     span{
@@ -427,7 +426,8 @@ header{
                         color:#fff;
                         font-weight:bolder;
                         position: absolute;
-                        bottom:1.2vw;
+                        bottom:1vw;
+                        right:1vw;
                     }
                 }
                 .bt-box::before{
