@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded' , ()=>{
     let timeline = new TimelineMax();
     timeline
     .to('.blur' , 6 , {
-        top:'40%' 
+        top:'30%' 
     })
     let scene = new ScrollMagic.Scene({
         triggerElement:'header',

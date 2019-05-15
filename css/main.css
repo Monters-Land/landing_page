@@ -133,7 +133,7 @@ header nav .sub a:hover {
   position: absolute;
   width: 120%;
   margin-left: -10%;
-  height: 50vw;
+  height: 1000px;
   bottom: -80vw;
   filter: blur(40px);
   background-color: #f9593a;
@@ -316,7 +316,7 @@ header nav .sub a:hover {
   height: 100%;
   flex: 1;
   background: url("../images/radio.png");
-  background-position: left bottom;
+  background-position: right top;
   background-size: cover;
 }
 .catalog-list .main .box .info {
@@ -355,7 +355,7 @@ header nav .sub a:hover {
   width: 100%;
   height: 50%;
   background-image: url("../images/Tv.png");
-  background-position: bottom right;
+  background-position: center bottom;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -392,7 +392,9 @@ header nav .sub a:hover {
 .catalog-list .main .items .bottom .pic-box {
   position: relative;
   width: 50%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 5%;
   box-sizing: border-box;
   overflow: hidden;
@@ -400,9 +402,6 @@ header nav .sub a:hover {
   background-color: #fddc1e;
 }
 .catalog-list .main .items .bottom .pic-box img {
-  position: absolute;
-  top: 20%;
-  transform: translate(-50%);
   width: 50%;
 }
 .catalog-list .main .items .bottom .pic-box span {
