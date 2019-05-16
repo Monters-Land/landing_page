@@ -506,7 +506,7 @@ header nav .sub a:hover {
   }
 
   .mobile_section {
-    height: 270vh;
+    overflow: hidden;
     text-align: center;
     width: 100%;
     background-color: #f9593a;

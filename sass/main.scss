@@ -529,6 +529,7 @@ transition:all ease 500ms;
        
     }
     .mobile_section{
+        overflow:hidden;
         .ft-text{
             font-size:50px;
             color:#fff;
@@ -536,7 +537,6 @@ transition:all ease 500ms;
             font-family: 'Montserrat';
             font-weight:bolder;
         }
-        height:270vh;
         text-align: center;
         width: 100%;
         background-color: #f9593a;
